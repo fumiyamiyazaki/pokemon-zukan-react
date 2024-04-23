@@ -37,7 +37,7 @@ const ReactSample: FC = () => {
   // pokemon取得
   useEffect(() => {
     dispatch(fetchPokemons());
-  }, []);
+  }, [dispatch]);
 
   // 選択初期値をゲンガーに設定
   useEffect(() => {

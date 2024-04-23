@@ -45,7 +45,9 @@ export const fetchPokemons = createAsyncThunk<
         (v) => v.id.toString() === id.toString()
       );
 
-      const jaName = specInfo.names?.find((v) => v.language.name === "ja").name;
+      const jaName = specInfo.names.find(
+        (v: any) => v.language.name === "ja"
+      ).name;
 
       return {
         id: id,
