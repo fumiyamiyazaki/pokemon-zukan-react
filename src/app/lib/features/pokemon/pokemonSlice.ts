@@ -101,5 +101,4 @@ export const pokemonSlice = createSlice({
   },
 });
 
-// export const {} = pokemonSlice.actions;
 export default pokemonSlice.reducer;
