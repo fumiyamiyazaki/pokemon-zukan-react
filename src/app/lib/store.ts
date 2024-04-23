@@ -1,13 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import themeReducer from "./features/test/testSlice";
-import favSlice from "./features/fav/favSlice";
 import pokemonSlice from "./features/pokemon/pokemonSlice";
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
-      theme: themeReducer,
-      fav: favSlice,
       pokemon: pokemonSlice,
     },
   });
